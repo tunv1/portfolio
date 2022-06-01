@@ -25,7 +25,7 @@ const Layout: React.FunctionComponent<ILayoutProps> = ({ children }) => {
     return (
         <div className='bg-background-image text-sky-300'>
             <div className='h-20 fixed top-5 left-0 right-0 z-50'>
-                <div className={`h-full py-2 w-11/12 mx-auto flex justify-between items-center rounded-full group hover:bg-white ${!showButton && ' bg-white'}`}>
+                <div className={`h-full py-2 flex justify-between items-center rounded-full group bg-white hover:w-full hover:animate-show-menu animate-hide-menu ${!showButton ? ' w-full animate-show-menu' : 'w-20 animate-hide-menu'}`}>
                     <div className='w-20 h-20 relative'><Image src='/logo.png' layout='fill' className='rounded-full' /></div>
                     <div className={`w-1/2 h-full gap-5 text-xl ${showButton ? 'hidden' : 'flex'} group-hover:flex`}>
                         <Link href='#about'><div className={`${styles.buttonEffect} w-40 cursor-pointer`}>About Me</div></Link>
