@@ -8,6 +8,7 @@ const portfolio = () => {
       <About />
       <Project />
       <div>abc</div>
+      <div>bdc</div>
     </React.Fragment>
   )
 }
